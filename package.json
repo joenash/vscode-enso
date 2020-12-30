@@ -1,0 +1,26 @@
+{
+    "name": "enso-lang",
+    "displayName": "Enso Lang",
+    "publisher": "joenash",
+    "description": "Syntax highlighting for the Enso language",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.52.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "enso",
+            "aliases": ["Enso", "enso"],
+            "extensions": [".enso"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "enso",
+            "scopeName": "source.enso",
+            "path": "./syntaxes/enso.tmLanguage.json"
+        }]
+    }
+}
