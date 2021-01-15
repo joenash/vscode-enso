@@ -136,8 +136,12 @@
 				"name": "comment.block.documentation",
 				"begin": "^(\\s*)##",
 				"end": "^(?!\\1\\s+)(?!\\s*$)"
-			}
-			]
+			}, 
+			{
+				"name":"comment.line.number-sign",
+				"begin": "#",
+				"end": "$"
+			}]
 		}
 	},
 	"scopeName": "source.enso"
